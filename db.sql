@@ -22,3 +22,13 @@ CREATE TABLE `users_survey` (
 ALTER TABLE `users_stats` ADD FOREIGN KEY (`user_id`) REFERENCES `users` (`id`);
 
 ALTER TABLE `users_survey` ADD FOREIGN KEY (`id`) REFERENCES `users` (`id`);
+
+-- CREATE DATABASE IF NOT EXISTS user_statistics;
+
+-- USE user_statistics;
+
+-- CREATE TABLE IF NOT EXISTS users (
+--   user_id INT AUTO_INCREMENT PRIMARY KEY,
+--   question_max INT,
+--   question_done INT
+-- );
